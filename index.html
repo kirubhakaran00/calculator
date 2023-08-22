@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter your values</h1> 
+    <p>It gives the soulution by <mark>adding,multiply,and division</mark> </p>
+    <br>
+    <input type="number" id="inp1" placeholder="first number">
+    <br> <br>
+    <input type="number" id="inp2" placeholder="second number"><br> <br>
+    <button onclick="sub()">GET ANSWER</button>
+    <p id="add"></p> <br>
+    <p id="mul"></p> <br>
+    <p id="div"></p> <br>
+    <script>
+        function sub(){
+        var a=parseInt(document.getElementById("inp1").value);
+        var b=parseInt(document.getElementById("inp2").value);
+        var c=a-b;
+        var d=a*b;
+        var e=a/b;
+        document.getElementById("add").innerHTML="Result is="+c;
+        document.getElementById("mul").innerHTML="Result is="+d;
+        document.getElementById("div").innerHTML="Result is="+e;
+        } 
+    </script>
+    <style>
+        h1{
+            color: rgb(104, 217, 221);
+        }
+        
+    </style>
+
+</body>
+</html>
